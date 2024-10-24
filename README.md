@@ -59,7 +59,7 @@ Flexibility: Cycle duration and start time are configurable.
 Cons:
 
 Database Complexity: Requires careful management of regional data partitions.
-Cache Invalidation: Cache updates during cycle changes can be tricky, needing careful synchronization.
+Cache Invalidation: Cache updates during cycle changes can be tricky,needing careful synchronization.
 Timezone Handling: Accurate cycle management requires careful handling of timezones.
 
 # Conclusion
