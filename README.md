@@ -20,9 +20,9 @@ Cycle N (Week N): Assign question N
 
 To implement the solution, we chose a Flask-based API that will serve as the backend for handling question assignments. The architecture is designed to accommodate the following requirements:
 
-API Endpoints: Create endpoints to fetch questions based on the user’s region.
-Dynamic Assignment: Implement logic to dynamically assign questions based on the current cycle and region.
-Caching: Utilize caching mechanisms to improve performance and response times, particularly for frequently accessed data.
+**API Endpoints**: Create endpoints to fetch questions based on the user’s region.
+**Dynamic Assignment**: Implement logic to dynamically assign questions based on the current cycle and region.
+**Caching**: Utilize caching mechanisms to improve performance and response times, particularly for frequently accessed data.
 Technology Stack
 Framework: Flask for building the RESTful API.
 Database: A simple in-memory structure for this implementation, with future potential for a more robust database solution (e.g., PostgreSQL, MongoDB).
@@ -44,7 +44,7 @@ Response: Returns the question assigned for the current cycle in the specified r
 
 To meet the scalability requirement of handling 100,000 daily active users and supporting millions globally, we implemented several strategies:
 
-Caching: The use of Flask-Caching helps reduce server load by storing frequently accessed data, which can significantly enhance performance during peak usage times.
+**Caching**: The use of Flask-Caching helps reduce server load by storing frequently accessed data, which can significantly enhance performance during peak usage times.
 Load Balancing: In a production environment, using load balancers would distribute incoming requests across multiple server instances, allowing for better resource management and reliability.
 Database Optimization: Future plans involve integrating a scalable database solution to manage a larger question set and provide more complex query capabilities.
 Horizontal Scaling: The architecture allows for horizontal scaling, where additional instances of the application can be deployed to handle increased load.
